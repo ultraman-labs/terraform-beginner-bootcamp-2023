@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semantic Versioning
+## Semantic Versioning :alien:
 
 This project is going to utilize semantic versioning for its tagging.
 
