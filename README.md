@@ -28,7 +28,7 @@ distribution needs.
 
 [How to check OS version in Linux](https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/)
 
-Example of checkin OS version
+Example of checking OS version
 ```
 $ cat /etc/os-release
 PRETTY_NAME="Ubuntu 22.04.3 LTS"
