@@ -1,5 +1,8 @@
 # Terraform Beginner Bootcamp 2023
 
+## NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. 
+## Such as AWS secret keys, etc.
+
 ## Semantic Versioning :alien:
 
 This project is going to utilize semantic versioning for its tagging.
@@ -230,14 +233,20 @@ This will run a plan and pass the changeset to be executed by Terraform-- apply 
 
 If we want to automatically approve an apply we can do this by using the auto approve flag. eg. `terraform apply --auto-approve`
 
-### Terraform Lock Files
+#### Terraform Destroy
+
+This command will to tear down and delete the infrastructure resources that you've created and managed using Terraform.
+
+To not have the prompt invoked, `$ terraform destroy --auto-approve` can be used.
+
+#### Terraform Lock Files
 
 `terraform.lock.hcl`contains the locked versioning for the 
  providers or modules that should be used with this project.
 
 The Terraform Lock File **should be committed** to your Version Control System (VCS) eg. GitHub
 
-### Terraform State FIles
+#### Terraform State FIles
 
 `terraform.tfstate` contains information about the current state of your infrastructure.
 
@@ -247,6 +256,6 @@ This file can contain sensitive data. If you lose this file, you lose knowing th
 
 `terraform.tfstate.backup` is the previous state (all settings) of the file state. 
 
-### Terraform Directory
+#### Terraform Directory
 
 `.terraform` directory contains binaries of Terraform providers.
