@@ -296,4 +296,6 @@ Provide the following code (replace your token in the file)
   }
 }
 ```
+We automated the workaround with this bash script [bin/generate_tfrc_credentials](https://github.com/ultraman-labs/terraform-beginner-bootcamp-2023/blob/15-generate-tfrc/bin/generate_tfrc_credentials)
+
 
