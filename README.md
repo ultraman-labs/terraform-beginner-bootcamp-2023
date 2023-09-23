@@ -266,3 +266,34 @@ Discoverd that code in the main.tf file was generating an S3 bucket name that co
 did not conform to the AWS bucket naming rules-- and raised an error when running `terraform apply`. So the remedy
 was to add and set the "upper" flag as `upper = false`. Also to decrease the chances of having the same bucket name
 with another bucket in the world, the length of the name was icreased from 16 to 32 characters.
+
+## Issues with Terraform Cloud Login and GitPod Workspace
+
+When attempting to run `erraform login` it wlll launch in bash wisiwig view to generate a token. However, it does not
+work as expected in GitPod VS-Code in the browser.
+
+The workaround is to manually generate a token in Terraform CLoud 
+
+```
+https://app.terraform.io/app/settings/tokens
+```
+
+Then create open the file manualy here:
+
+```sh
+$ touch /home/gitpod/.terraform.d/credentials.tfrc.json
+$ open /home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+Provide the following code (replace your token in the file)
+
+```json
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR-TERRAFORM-CLOUD-TOKEN"
+    }
+  }
+}
+```
+
