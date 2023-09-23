@@ -259,3 +259,10 @@ This file can contain sensitive data. If you lose this file, you lose knowing th
 #### Terraform Directory
 
 `.terraform` directory contains binaries of Terraform providers.
+
+## AWS S3 Bucket
+
+Discoverd that code in the main.tf file was generating an S3 bucket name that contained upper case letters. This 
+did not conform to the AWS bucket naming rules-- and raised an error when running `terraform apply`. So the remedy
+was to add and set the "upper" flag as `upper = false`. Also to decrease the chances of having the same bucket name
+with another bucket in the world, the length of the name was icreased from 16 to 32 characters.
