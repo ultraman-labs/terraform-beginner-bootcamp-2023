@@ -299,3 +299,6 @@ Provide the following code (replace your token in the file)
 We automated the workaround with this bash script [bin/generate_tfrc_credentials](https://github.com/ultraman-labs/terraform-beginner-bootcamp-2023/blob/15-generate-tfrc/bin/generate_tfrc_credentials)
 
 
+## Terraform Alias
+
+To be effecient and true Terraformers we are setting an alias (a short cut for frequently used commands) that will allows us to enter        `$ tf`instead of `$ terraform` so that we don't have to type the entire word. This is done in the `.bash_profile` file that configures the terminal's command-line environment.
