@@ -4,7 +4,7 @@
 ## NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. Such as AWS secret keys etc.
 
 - [Terraform Beginner Bootcamp 2023 - Week 0](#terraform-beginner-bootcamp-2023---week-0)
-  * [NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. Such as AWS secret keys etc.](#note--always-review-your-files-before-you-commit-them--be-sure-that-sensitive-information-is-removed-such-as-aws-secret-keys-etc)
+  
   * [Semantic Versioning](#semantic-versioning)
   * [Install Terraform CLI](#install-terraform-cli)
     + [Consideraton with the Terraform CLI changes](#consideraton-with-the-terraform-cli-changes)
