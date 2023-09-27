@@ -10,6 +10,7 @@
   - [Considerations for Linux Distributions](#considerations-for-linux-distributions)
   - [Refactoring into Bash scripts](#refactoring-into-bash-scripts)
   - [Shebang Considerations](#shebang-considerations)
+  - [Execution Considerations](#execution-considerations)
 
 ## Semantic Versioning
 
