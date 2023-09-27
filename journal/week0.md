@@ -2,8 +2,6 @@
 # Terraform Beginner Bootcamp 2023 - Week 0
 
 ## NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. Such as AWS secret keys etc.
-
-- [Terraform Beginner Bootcamp 2023 - Week 0](#terraform-beginner-bootcamp-2023---week-0)
   
   * [Semantic Versioning](#semantic-versioning)
    
