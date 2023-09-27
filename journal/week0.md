@@ -22,7 +22,6 @@
       - [Persisting Env Vars in GitPod](#persisting-env-vars-in-gitpod)
 - [AWS CLI Installation](#aws-cli-installation)
     + [We'll need to generate AWS CLI credits from IAM User in order to the user AWS CLI.](#we-ll-need-to-generate-aws-cli-credits-from-iam-user-in-order-to-the-user-aws-cli)
-    + [AWS CLI Installation](#aws-cli-installation-1)
   * [Terraform Basics](#terraform-basics)
     + [Terraform Registry](#terraform-registry)
     + [Terraform Console](#terrafomr-console)
