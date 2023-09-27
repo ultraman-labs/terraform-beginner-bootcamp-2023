@@ -9,6 +9,7 @@
   - [Consideraton with the Terraform CLI changes](#consideraton-with-the-terraform-cli-changes)
   - [Considerations for Linux Distributions](#considerations-for-linux-distributions)
   - [Refactoring into Bash scripts](#refactoring-into-bash-scripts)
+  - [Shebang Considerations](#shebang-onsiderations)
 
 ## Semantic Versioning
 
