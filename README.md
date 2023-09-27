@@ -1,9 +1,16 @@
 # Terraform Beginner Bootcamp 2023
 
-## NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. 
-## Such as AWS secret keys, etc.
+## NOTE: Always review your files before you commit them! Be sure that sensitive information is removed. Such as AWS secret keys etc.
 
-## Semantic Versioning :alien:
+## TOC 
+
+- [Semantic Versionin](#semantic-versioning)
+- [Install Terraform CLI](#install-terraform-cli)
+  - [Consideraton with the Terraform CLI changes](#consideraton-with-the-terraform-cli-changes)
+  - [Considerations for Linux Distributions](#considerations-for-linux-distributions)
+  - []()
+
+## Semantic Versioning
 
 This project is going to utilize semantic versioning for its tagging.
 
@@ -302,3 +309,5 @@ We automated the workaround with this bash script [bin/generate_tfrc_credentials
 ## Terraform Alias
 
 To be effecient and true Terraformers we are setting an alias (a short cut for frequently used commands) that will allows us to enter        `$ tf`instead of `$ terraform` so that we don't have to type the entire word. This is done in the `.bash_profile` file that configures the terminal's command-line environment.
+
+
