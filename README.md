@@ -4,15 +4,6 @@
 
 ## TOC 
 
-- [Semantic Versionin](#semantic-versioning)
-- [Install Terraform CLI](#install-terraform-cli)
-  - [Consideraton with the Terraform CLI changes](#consideraton-with-the-terraform-cli-changes)
-  - [Considerations for Linux Distributions](#considerations-for-linux-distributions)
-  - [Refactoring into Bash scripts](#refactoring-into-bash-scripts)
-  - [Shebang Considerations](#shebang-considerations)
-  - [Execution Considerations](#execution-considerations)
-  - [Linux Permissions Considerations](#linux-permissions-considerations)
-
 ## Semantic Versioning
 
 This project is going to utilize semantic versioning for its tagging.
