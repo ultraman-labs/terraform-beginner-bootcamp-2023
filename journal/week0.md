@@ -14,7 +14,7 @@
       - [Execution Considerations](#execution-considerations)
       - [Linux Permissions Considerations](#linux-permissions-considerations)
     + [GitPod Lifecycle (Before, Init, Command)](#gitpod-lifecycle--before--init--command-)
-    + [Working With Env Vars](#working-with-env-vars)
+   * [Working With Env Vars](#working-with-env-vars)
       - [env command](#env-command)
       - [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
       - [Printing Env Vars](#printing-env-vars)
