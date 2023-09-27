@@ -25,7 +25,7 @@
     + [AWS CLI Installation](#aws-cli-installation-1)
   * [Terraform Basics](#terraform-basics)
     + [Terraform Registry](#terraform-registry)
-    + [Terrafomr Console](#terrafomr-console)
+    + [Terraform Console](#terrafomr-console)
       - [Terraform init](#terraform-init)
       - [Terraform plan](#terraform-plan)
       - [Terraform apply](#terraform-apply)
