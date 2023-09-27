@@ -11,6 +11,7 @@
   - [Refactoring into Bash scripts](#refactoring-into-bash-scripts)
   - [Shebang Considerations](#shebang-considerations)
   - [Execution Considerations](#execution-considerations)
+  - [Linux Permissions Considerations](#linux-permissions-considerations)
 
 ## Semantic Versioning
 
