@@ -60,3 +60,23 @@ In Terraform, variable values are determined following a specific order of opera
 
 This order of operation allows Terraform to handle variables flexibly, accommodating different scenarios and environments by providing default values and allowing users to customize them as needed.
 
+## Dealing With Configuration Drift
+
+## What happens if we lose our state file?
+
+If you lose your state file, you most likely have to tear down all your cloud infrustructure manually. 
+
+You can use terraform import, but it won't work for all terraform clous resources. You need to check the terraform providers documentation for which resources support import.
+
+### Fix Missing Resources With Terraform Input
+
+`terraform import aws_s3_bucket.example`
+
+[Terraform Imort](https://developer.hashicorp.com/terraform/cli/import)
+[AWS S3 Bucket Import](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string#import)
+
+### Fix Manual Configuration
+
+If via ClickOps a cloud resource is manually deleted or modified.
+
+If we run terraform again it will attempt to put our infrustructure back into the expected state fixing Configuration Drift.
