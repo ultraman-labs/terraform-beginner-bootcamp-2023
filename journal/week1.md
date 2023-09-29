@@ -68,6 +68,7 @@ If you lose your state file, you most likely have to tear down all your cloud in
 
 You can use terraform import, but it won't work for all terraform clous resources. You need to check the terraform providers documentation for which resources support import.
 
+
 ### Fix Missing Resources With Terraform Input
 
 `terraform import aws_s3_bucket.example`
@@ -80,3 +81,55 @@ You can use terraform import, but it won't work for all terraform clous resource
 If via ClickOps a cloud resource is manually deleted or modified.
 
 If we run terraform again it will attempt to put our infrustructure back into the expected state fixing Configuration Drift.
+
+
+## Fix using Terraform Refresh
+
+```tf
+terraform apply -refresh-only -auto-approve
+```
+
+## Terraform Modules
+
+### Terraform Module Structure
+
+It is recommended to place `modules` in a directory when locally
+developing modules but you can name it whatevery you prefer.
+### Passing input variables
+
+```tf
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+  user_uuid = var.user_uuid
+  bucket_name = var.bucket_name
+}
+```
+
+### Modules Sources
+
+Using the sour we can import the module (file) from many different source types. Such as:
+- locally, i.e, local path
+- GitHub
+- Terraform Registry
+- S3 Buckets
+- HTTPS URLs
+
+
+We can pass input variables to our module 
+The module has to declare the terraform variables in its own 
+variable tf.
+```tf
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+}
+```
+
+[Module Sources](https://developer.hashicorp.com/terraform/language/modules/sources#s3-bucket)
+
+## NOTE: Terraform Init Plan
+If in the file hierarchy, the top level variable.tf file is empty, and even if there's a hierarchical lower level variable.tf file, defined with module key-values, running `terraform plan` will raise an error. Saying that thera are referencing input variables that are undeclared. So there are two options:
+
+- 1) Declare the input variables in the top level variables.tf 
+     file.
+- 2) Delete the top level variable.tf file. The 'terraform plan'
+     command will then, in its initialization, find the lower variable.tf file and no raised error of an undeclared variable will be raised.      
