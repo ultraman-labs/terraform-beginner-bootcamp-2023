@@ -163,7 +163,7 @@ It may likely produce older examples that could be deprecated. Often affecting p
 
 ## Working With Files in Terraform
 
-### Fileexist functin
+### Fileexist function
 
 This is a built in Terraform function to check the existance of a file.
 
