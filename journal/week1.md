@@ -148,7 +148,7 @@ module "terrahouse_aws" {
 [Module Sources](https://developer.hashicorp.com/terraform/language/modules/sources#s3-bucket)
 
 ## NOTE: Terraform Init Plan
-If in the file hierarchy, the top level variable.tf file is empty, and even if there's a hierarchical lower level variable.tf file, defined with module key-values, running `terraform plan` will raise an error. Saying that thera are referencing input variables that are undeclared. So there are two options:
+If in the file hierarchy, the top level variable.tf file is empty, and even if there's a hierarchical lower level variable.tf file, defined with module key-values, running `terraform plan` will raise an error. Saying that there are referencing input variables that are undeclared. So there are two options:
 
 - 1) Declare the input variables in the top level variables.tf 
      file.
