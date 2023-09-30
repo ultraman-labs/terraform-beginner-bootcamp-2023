@@ -133,3 +133,42 @@ If in the file hierarchy, the top level variable.tf file is empty, and even if t
      file.
 - 2) Delete the top level variable.tf file. The 'terraform plan'
      command will then, in its initialization, find the lower variable.tf file and no raised error of an undeclared variable will be raised.      
+
+## Copnsiderations when using ChatGPT to write Terraform
+
+LLMs, such as ChatGPT, may not be trained on the latest documentation or informaiton about Terraform.
+
+It may likely produce older examples that could be deprecated. Often affecting providers.
+
+## Working With Files in Terraform
+
+### Fileexist functin
+
+This is a built in Terraform function to check the existance of a file.
+
+```tf
+    condition     = fileexists(var.error_html_filepath)
+```
+[Fileexists Reference](https://developer.hashicorp.com/terraform/language/functions/fileexists)
+
+### Filemd5
+
+[Filemd5 Reference](https://developer.hashicorp.com/terraform/language/functions/filemd5)
+
+## Path Variable
+
+In Terraform there is a special variable called `path`` that allows to reference local paths:
+- path.module = get the path for the current module
+- path.root = get the path for the root module 
+
+[Special Path Variable](https://developer.hashicorp.com/terraform/language/expressions/references#filesystem-and-workspace-info)
+
+```tf
+resource "aws_s3_object" "index_html" {
+  bucket = aws_s3_bucket.website_bucket.bucket
+  key    = "index.html"
+  source = ${root.path}/public/index.html
+
+  etag = filemd5(var.index_html_filepath)
+}
+```
