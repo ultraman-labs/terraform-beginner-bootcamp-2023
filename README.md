@@ -138,7 +138,7 @@ echo $VATO
 
 We can print an env var using `echo` eg. `echo $VATO`
 
-### Scoping of Env Vars
+### Scopping of Env Vars
 
 When new bash terminals are opened in VS-Code, it will not be aware of env vars that have ben set in another bash terminal window. 
 
