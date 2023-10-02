@@ -17,6 +17,12 @@ else
 
     # Inform the user if the alias already exists
     echo "Alias already exists in .bash_profile."
+
+    echo 'alias tfp="terraform plan"' >> ~/.bash_profile
+    echo 'alias tfa="terraform apply"' >> ~/.bash_profile
+    echo 'alias tfaaa="terraform apply --auto-approve"' >> ~/.bash_profile
+    echo 'alias tfd="terraform destroy"' >> ~/.bash_profile
+    echo 'alias tfdaa="terrform destroy --auto-approve"' >> ~/.bash_profile
 fi
 
 # Optional: source the .bash_profile to make the alias available immediately
