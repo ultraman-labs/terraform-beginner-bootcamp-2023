@@ -35,3 +35,13 @@ variable "error_html_filepath" {
     error_message = "The error_html_filepath must be a valid file path ending with .html."
   }
 }
+
+variable "content_version" {
+  type        = number
+  description = "The version of the content, starting at 1."
+
+  validation {
+    condition     = var.content_version >= 1
+    error_message = "The content_version must be an integer starting at 1."
+  }
+}
