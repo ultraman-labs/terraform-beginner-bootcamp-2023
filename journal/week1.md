@@ -315,3 +315,18 @@ resource "aws_instance" "web" {
 }
 ```
 
+## For Each Expressions
+
+"For each" allows us to iterate over complex data types.
+
+```sh
+[for s in var.list : upper(s)]
+```
+This is mostly useful when you are creating multiples of a cloud resource and you want to
+reduce the amount of terraform code.
+
+[For Each Expressions])(https://developer.hashicorp.com/terraform/language/expressions/for)
+
+## Filesystem Functions
+
+[fileset](https://developer.hashicorp.com/terraform/language/functions/fileset#class)
