@@ -16,5 +16,9 @@ variable "error_html_filepath" {
 
 variable "content_version" {
   type        = number
-  description = "The version of the content, starting at 1."
+}
+
+variable "assets_path" {
+  description = "path to assets folder"
+  type = string
 }
