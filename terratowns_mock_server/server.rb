@@ -217,6 +217,7 @@ class TerraTownsMockServer < Sinatra::Base
     home.name = name
     home.description = description
     home.content_version = content_version
+    # binding.pry
 
     unless home.valid?
       error 422, home.errors.messages.to_json
