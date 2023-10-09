@@ -35,3 +35,16 @@ provider "terratowns" {
   # error_html_filepath = var.error_html_filepath
   # content_version = var.content_version
 # }
+
+resource "terratowns_home" "home" {
+  name = "Ultraman Comics"
+  description = <<DESCRIPTION
+EPISODE 1.0.0: Ultraman finds himself protecting Terra-Towns from a great foe.
+Knowing he needs help...yet feeling alone, he may not be able
+to beat this monster who is bent on destroying anything in its path.
+DESCRIPTION
+  #domain_name = module.terrahouse_aws.cloudfront_url
+  domain_name = "3fdq3gz.cloudfront.net"
+  town = "gamers-grotto"
+  content_version = 1
+}
